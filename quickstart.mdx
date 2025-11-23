@@ -5,17 +5,9 @@ title: "Start using cryptexx right now!"
 ## How to use cryptexx
 
 <AccordionGroup>
-  <Accordion title="Simple encryption and decryption system" icon="lock">
-    ```python
-    from cryptexx import cryptexx
-    
-    # Encryption
-    encrypted_text = cryptexx.encrypt("Hello, World!")
-    
-    # Decryption
-    decrypted_text = cryptexx.decrypt(encrypted_text)
-    print(decrypted_text)
-    
+  <Accordion title="Install cryptexx" icon="download">
+    ```bash
+    pip install cryptexx
     ```
   </Accordion>
   <Accordion title="Simple encryption and decryption system using your own custom key" icon="key">
@@ -32,6 +24,19 @@ title: "Start using cryptexx right now!"
     
     # Decryption
     decrypted_text = cryptlock.decrypt(encrypted_text, "MyKey")
+    print(decrypted_text)
+    
+    ```
+  </Accordion>
+  <Accordion title="Simple encryption and decryption system" icon="lock">
+    ```python
+    from cryptexx import cryptexx
+    
+    # Encryption
+    encrypted_text = cryptexx.encrypt("Hello, World!")
+    
+    # Decryption
+    decrypted_text = cryptexx.decrypt(encrypted_text)
     print(decrypted_text)
     
     ```
